@@ -1,25 +1,17 @@
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+.coffee_name {
+    font-size: 30px;
+    font-weight: 400;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.coffee_roast {
+    margin: .5em 1em;
+    color: grey;
 }
 
-body {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-h1 {
+h3 {
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#mainDiv {
-    width: 90%;
-    margin: auto;
+label {
+    font-weight: bold;
 }
