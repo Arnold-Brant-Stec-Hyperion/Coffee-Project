@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://image.freepik.com/free-photo/close-up-white-wood-texture-background-rustic-wooden-vertical_35257-283.jpg");
+    background-size: cover;
+}
+
 .coffee_name {
     font-size: 30px;
     font-weight: 400;
@@ -14,4 +19,8 @@ h3 {
 
 label {
     font-weight: bold;
+}
+
+.btn {
+    background-color: #443730;
 }
