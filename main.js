@@ -24,9 +24,7 @@ function click_add(e) {
 }
 
 function roast_selection(e) {
-
     document.getElementById('coffee_name').value = "";
-
     updateCoffees(e);
 }
 function add_coffee(){
