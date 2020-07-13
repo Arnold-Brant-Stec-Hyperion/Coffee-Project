@@ -40,13 +40,13 @@ function add_coffee() {
 
 function updateCoffees(e) {
 
-    e.preventDefault(); // don't submit the form, we just want to update the data
+    e.preventDefault();
 
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     var coffee_name = document.getElementById('coffee_name').value;
 
-    if (coffee_name === "") {
+    if (coffee_name === "all") {
         coffees.forEach(function (coffee) {
             if (coffee.roast === selectedRoast || selectedRoast === "") {
                 filteredCoffees.push(coffee);
@@ -94,3 +94,20 @@ roastSelection.addEventListener('change', roast_selection);
 
 coffee_name.addEventListener('input', updateCoffees);
 submitButton.addEventListener('click', click_add);
+
+$(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+    });
+});
+
+// Scrolling Effect
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+        $('nav').addClass('black');
+    }
+
+    else {
+        $('nav').removeClass('black');
+    }
+})
