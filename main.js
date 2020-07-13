@@ -53,7 +53,7 @@ function updateCoffees(e) {
             }
         })
     }else{
-        roastSelection.value = "all";
+        roastSelection.value = selectedRoast;
         coffees.forEach((function (coffee) {
             if (coffee.name.toLowerCase().match(coffee_name.toLowerCase())){
 
