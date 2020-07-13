@@ -17,13 +17,12 @@ h3 {
     text-align: center;
 }
 
-.form-control {
-    background-color: #D2A59B;
-    color: #FBD5AA;
+.py-2{
+    color: #D2A59B;
 }
-
 label {
     font-weight: bold;
+    color: #D2A59B;
 }
 
 .btn {

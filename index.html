@@ -35,18 +35,17 @@
 <!-- Main Container -->
 <div class="container-fluid pb-5">
     <!-- Page Header -->
-    <!--Row everything is in-->
+    <!--The Row-->
     <div class="row">
-        <!-- Column containing coffees -->
-        <div id="coffees" class="col-12 col-sm-6 mt-3">
-        </div>
-        <!-- Column containing both Search/Add Coffee Forms -->
+        <!-- Coffee List Column -->
+        <div id="coffees" class="col-12 col-sm-6 mt-3"></div>
+        <!-- Search/Add Column -->
         <div class="col-12 col-sm-6 mt-3">
-            <!-- Top search form (start)-->
+            <!-- Search Form-->
             <form>
                 <label for="roast-selection">Roast Selection</label>
                 <br>
-                <!-- Roast Selection dropdown options -->
+                <!-- Roast Selection Menu -->
                 <select class="form-control" id="roast-selection">
                     <option selected>all</option>
                     <option>light</option>
@@ -56,33 +55,32 @@
                 <label for="coffee_name">Coffee Name</label>
                 <input class="form-control" type="text" id="coffee_name">
                 <br>
-                <!-- search coffee submit button-->
-                <input class="btn btn-secondary btn-block" type="button" value="Search">
+                <!-- Search Coffee Button -->
+                <input class="btn btn-light btn-block" type="button" value="Search">
             </form>
             <hr>
-            <!--Add a Coffee form (start) -->
+            <!-- New Coffee Form -->
             <h3 class="py-2">Add a Coffee</h3>
             <form>
                 <label for="new_roast">Roast Selection</label>
                 <br>
-                <!-- Roast selection dropdown options for adding new coffee -->
+                <!-- New Coffee Roast Selection -->
                 <select class="form-control" id="new_roast">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
-                <!-- Adding New Coffee name -->
+                <!-- New Coffee Name -->
                 <label for="new_coffee_name">Coffee Name</label>
                 <input class="form-control" type="text" id="new_coffee_name">
                 <br>
-                <!-- New Coffee submit button-->
-                <input class="btn btn-secondary btn-block" id="add_coffee" type="button" value="Add Coffee"/>
+                <!-- New Coffee Submit -->
+                <input class="btn btn-light btn-block" id="add_coffee" type="button" value="Add Coffee"/>
             </form>
         </div>
     </div>
 </div>
-
-
+<!-- Script -->
 <script src="main.js"></script>
 </body>
 </html>

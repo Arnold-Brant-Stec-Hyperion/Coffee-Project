@@ -46,20 +46,22 @@ function updateCoffees(e) {
     var filteredCoffees = [];
     var coffee_name = document.getElementById('coffee_name').value;
 
-    if (coffee_name === "all") {
-        coffees.forEach(function (coffee) {
-            if (coffee.roast === selectedRoast || selectedRoast === "") {
+    if(coffee_name === ""){
+        coffees.forEach(function(coffee) {
+            if (coffee.roast === selectedRoast || selectedRoast === "all") {
                 filteredCoffees.push(coffee);
             }
         })
-    } else {
-        roastSelection.value = selectedRoast;
+    }else{
+        roastSelection.value = "all";
         coffees.forEach((function (coffee) {
-            if (coffee.name.toLowerCase().match(coffee_name.toLowerCase())) {
+            if (coffee.name.toLowerCase().match(coffee_name.toLowerCase())){
+
                 filteredCoffees.push(coffee);
             }
         }))
     }
+
     coffee_body.innerHTML = renderCoffees(filteredCoffees);
 
 }
